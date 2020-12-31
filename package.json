@@ -1,0 +1,50 @@
+{
+  "name": "starter-kit-nuxt-locomotive-scroll",
+  "version": "1.0.0",
+  "description": "Simple starter kit to use Locomotive Scroll and Nuxt without giving it a second though.",
+  "author": "Davide Marchet",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/gtm": "^2.4.0",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "fs": "0.0.1-security",
+    "gsap": "^3.5.1",
+    "locomotive-scroll": "^4.0.6",
+    "node-fetch": "^2.6.1",
+    "nuxt": "^2.14.12",
+    "vue": "^2.6.12",
+    "vue-server-renderer": "^2.6.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "eslint": "^7.16.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "eslint-plugin-vue": "^7.4.0",
+    "fibers": "^5.0.0",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6",
+    "sass": "^1.32.0",
+    "sass-loader": "^10.1.0"
+  }
+}
