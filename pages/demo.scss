@@ -72,14 +72,10 @@ footer{
   padding: 0 12.5vw ;
 }
 
-.example.vertical .example-section{
-  height: 80vh;
-}
-
 .example.horizontal .example-section{
   width: 100vw;
 }
 
-.example.vertical .example-section + .example-section{
-  margin-top: 12.5vw;
+.example.vertical .example-section, .example.vertical footer {
+  margin-top: 50vw;
 }
