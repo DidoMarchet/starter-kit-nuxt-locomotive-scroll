@@ -181,5 +181,5 @@ mounted () {
 [https://starter-kit-nuxt-locomotive-scroll.netlify.app/](https://starter-kit-nuxt-locomotive-scroll.netlify.app/)
 ### Horizontal Scroll
 [https://starter-kit-nuxt-locomotive-scroll.netlify.app/horizontal-scroll/](https://starter-kit-nuxt-locomotive-scroll.netlify.app/horizontal-scroll/)
-### Basic Scroll
+### Gsap Scroll Trigger
 [https://starter-kit-nuxt-locomotive-scroll.netlify.app/scroll-trigger/](https://starter-kit-nuxt-locomotive-scroll.netlify.app/scroll-trigger/)
