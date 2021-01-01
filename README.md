@@ -32,7 +32,7 @@ $ npm run generate
 # Plugin
 First of all we setup the plugin enabling Locomotive Scroll instance works globally both in our component and for your own purposes.
 
-In [`/LocomotiveScroll/plugin/index.js`](https://github.com/DidoMarchet/component-nuxt-locomotive-scroll/blob/main/LocomotiveScroll/plugin/index.js) we create the plugin:
+In [`/LocomotiveScroll/plugin/index.js`](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/LocomotiveScroll/plugin/index.js) we create the plugin:
 ```{js filename="ch1/test_one.py"}
 import LocomotiveScroll from 'locomotive-scroll'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
@@ -50,16 +50,16 @@ if (typeof window !== 'undefined' && window.Vue) {
   }
 }
 ```
-After the setup,  it will be used in [`/plugins/client.js`](https://github.com/DidoMarchet/component-nuxt-locomotive-scroll/blob/main/plugins/client.js).
+After the setup,  it will be used in [`/plugins/client.js`](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/plugins/client.js).
 
-`/plugins/client.js` works with `mode: 'client'` in the Nuxt [plugins configuration](https://github.com/DidoMarchet/component-nuxt-locomotive-scroll/blob/main/configuration/plugins/index.js) .
+`/plugins/client.js` works with `mode: 'client'` in the Nuxt [plugins configuration](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/configuration/plugins/index.js) .
 
 # Component
 This component is an useful wrap for our Locomotive Scroll implementation.
 
 Below are the main steps of the implementation.
 
-Complete code can be found here [`/LocomotiveScroll/component/index.js`](https://github.com/DidoMarchet/component-nuxt-locomotive-scroll/blob/main/LocomotiveScroll/component/index.vue).
+Complete code can be found here [`/LocomotiveScroll/component/index.js`](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/LocomotiveScroll/component/index.vue).
 
 ### Markup
 ``` html
@@ -116,7 +116,7 @@ Once initialized we listen to scroll event.
 
 Each time scroll event is fired we call `onScroll` method.
 
-`onScroll` takes as parameter the scroll instance and uses this data to fill the store ([`/store/app.js`](https://github.com/DidoMarchet/component-nuxt-locomotive-scroll/blob/main/store/app.js)) making the state of the scroll accessible and usable in all our application.
+`onScroll` takes as parameter the scroll instance and uses this data to fill the store ([`/store/app.js`](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/store/app.js)) making the state of the scroll accessible and usable in all our application.
 
 ```js
 methods: {
@@ -133,10 +133,10 @@ methods: {
 ```
 
 # Implementation
-Before using our component in the page we declare it globally in [`/plugins/global.js`](https://github.com/DidoMarchet/component-nuxt-locomotive-scroll/blob/main/plugins/client.js). 
-`/plugins/global.js` is called in the Nuxt [plugins configuration](https://github.com/DidoMarchet/component-nuxt-locomotive-scroll/blob/main/configuration/plugins/index.js).
+Before using our component in the page we declare it globally in [`/plugins/global.js`](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/plugins/client.js). 
+`/plugins/global.js` is called in the Nuxt [plugins configuration](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/configuration/plugins/index.js).
 
-Once the plugin is global we can use it in our page or components in this way ([`/pages/index.vue`](https://github.com/DidoMarchet/component-nuxt-locomotive-scroll/blob/main/pages/index.vue)):
+Once the plugin is global we can use it in our page or components in this way ([`/pages/index.vue`](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/pages/index.vue)):
 
 ```html
 <template>
@@ -166,7 +166,7 @@ We can use the [`$nuxt`](https://nuxtjs.org/docs/2.x/internals-glossary/$nuxt) h
 ```js
 this.$nuxt.$emit('update-locomotive')
 ``` 
-and listen it in the `mounted` hook in [`/LocomotiveScroll/component/index.js`](https://github.com/DidoMarchet/component-nuxt-locomotive-scroll/blob/main/LocomotiveScroll/component/index.vue) component:
+and listen it in the `mounted` hook in [`/LocomotiveScroll/component/index.js`](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/LocomotiveScroll/component/index.vue) component:
 
 ``` js
 mounted () {
