@@ -166,7 +166,7 @@ We can use the [`$nuxt`](https://nuxtjs.org/docs/2.x/internals-glossary/$nuxt) h
 ```js
 this.$nuxt.$emit('update-locomotive')
 ``` 
-and listen it in the `mounted` hook in [`/LocomotiveScroll/component/index.js`](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/LocomotiveScroll/component/index.vue) component:
+and listen it in the `mounted` hook in [`/LocomotiveScroll/component/index.vue`](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/LocomotiveScroll/component/index.vue) component:
 
 ``` js
 mounted () {
