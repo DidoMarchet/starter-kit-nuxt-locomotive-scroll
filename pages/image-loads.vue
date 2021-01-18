@@ -17,6 +17,7 @@
     <div class="example vertical">
       <header data-scroll-section>
         <h1>Image<br> Loads</h1>
+        <p>(Images are loaded after 2.5s and the scroll refreshed)</p>
       </header>
       <div class="example-section" data-scroll-section>
         <div class="example-content">
@@ -62,7 +63,7 @@ export default {
         }
         image.src = image.dataset.src
       })
-    }, 1500)
+    }, 2500)
   }
 }
 </script>
