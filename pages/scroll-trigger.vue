@@ -34,8 +34,8 @@
         </div>
       </div>
       <footer>
-        <nuxt-link to="/">
-          Go to Vertical Scroll
+        <nuxt-link to="/image-loads">
+          Go to Image Loads
         </nuxt-link>
       </footer>
     </div>
