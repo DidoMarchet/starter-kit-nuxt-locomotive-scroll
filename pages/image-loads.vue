@@ -16,7 +16,7 @@
   >
     <div class="example vertical">
       <header data-scroll-section>
-        <h1>Vertical<br> Scroll</h1>
+        <h1>Image<br> Loads</h1>
       </header>
       <div class="example-section" data-scroll-section>
         <div class="example-content">
