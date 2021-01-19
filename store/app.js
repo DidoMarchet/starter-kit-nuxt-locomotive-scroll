@@ -1,8 +1,10 @@
 export const state = () => ({
   scroll: {
     isScrolling: false,
-    limitX: 0,
-    limitY: 0,
+    limit: {
+      x: 0,
+      y: 0
+    },
     x: 0,
     y: 0
   }
