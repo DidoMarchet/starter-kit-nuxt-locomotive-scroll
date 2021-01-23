@@ -21,12 +21,7 @@
           <div class="example-small-square" data-scroll-trigger />
         </div>
       </div>
-      <div class="example-section">
-        <div class="example-content">
-          <div class="example-small-square" data-scroll-trigger />
-          <div class="example-big-square" />
-        </div>
-      </div>
+      <BoxComponent />
       <div class="example-section">
         <div class="example-content">
           <div class="example-big-square" />
@@ -48,6 +43,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 export default {
+  components: {
+    BoxComponent: () => import(/* webpackPrefetch: true */ '@/components/box-component.vue')
+  },
   mounted () {
     this.initScrolltrigger()
 
