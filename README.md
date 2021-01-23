@@ -124,7 +124,7 @@ methods: {
     if (typeof this.$store._mutations['app/setScroll'] !== 'undefined') {
       this.$store.commit('app/setScroll', {
         isScrolling: this.locomotive.scroll.isScrolling,
-        limit: e.limit,
+        limit: { ...e.limit },
         ...e.scroll // x, y
       })
     }
@@ -183,3 +183,6 @@ mounted () {
 [https://starter-kit-nuxt-locomotive-scroll.netlify.app/horizontal-scroll/](https://starter-kit-nuxt-locomotive-scroll.netlify.app/horizontal-scroll/)
 ### Gsap Scroll Trigger
 [https://starter-kit-nuxt-locomotive-scroll.netlify.app/scroll-trigger/](https://starter-kit-nuxt-locomotive-scroll.netlify.app/scroll-trigger/)
+
+### Image Loads
+[https://starter-kit-nuxt-locomotive-scroll.netlify.app/image-loads/](https://starter-kit-nuxt-locomotive-scroll.netlify.app/image-loads/)

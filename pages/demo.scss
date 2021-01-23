@@ -56,6 +56,16 @@ footer{
   background-color: #000;
 }
 
+
+.example-big-image{
+  img{
+    width: 100%;
+    width: 50vw;
+    height: auto;
+    display: block;
+  }
+}
+
 .example.horizontal header{
   width: 100vw;
   height: 100vh;
@@ -77,5 +87,5 @@ footer{
 }
 
 .example.vertical .example-section, .example.vertical footer {
-  margin-top: 50vw;
+  padding-top: 50vw;
 }

@@ -12,10 +12,10 @@
     }"
   >
     <div class="example vertical">
-      <header>
+      <header data-scroll-section>
         <h1>Gsap Scroll Trigger</h1>
       </header>
-      <div class="example-section">
+      <div class="example-section" data-scroll-section>
         <div class="example-content">
           <div class="example-big-square" />
           <div class="example-small-square" data-scroll-trigger />
@@ -28,9 +28,9 @@
           <div class="example-small-square" data-scroll-trigger />
         </div>
       </div>
-      <footer>
-        <nuxt-link to="/">
-          Go to Vertical Scroll
+      <footer data-scroll-section>
+        <nuxt-link to="/image-loads">
+          Go to Image Loads
         </nuxt-link>
       </footer>
     </div>
