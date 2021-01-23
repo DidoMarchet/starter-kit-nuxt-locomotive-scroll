@@ -22,7 +22,7 @@
         </div>
       </div>
       <BoxComponent />
-      <div class="example-section">
+      <div class="example-section" data-scroll-section>
         <div class="example-content">
           <div class="example-big-square" />
           <div class="example-small-square" data-scroll-trigger />
