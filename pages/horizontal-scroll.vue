@@ -37,7 +37,7 @@
         </div>
       </div>
       <footer data-scroll-section>
-        <nuxt-link to="/scroll-trigger">
+        <nuxt-link to="/scroll-trigger/">
           Go to Gsap Scroll Trigger
         </nuxt-link>
       </footer>

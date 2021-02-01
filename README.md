@@ -186,3 +186,6 @@ mounted () {
 
 ### Image Loads
 [https://starter-kit-nuxt-locomotive-scroll.netlify.app/image-loads/](https://starter-kit-nuxt-locomotive-scroll.netlify.app/image-loads/)
+
+### on Call Function
+[https://starter-kit-nuxt-locomotive-scroll.netlify.app/on-call/](https://starter-kit-nuxt-locomotive-scroll.netlify.app/on-call/)

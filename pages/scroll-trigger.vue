@@ -29,7 +29,7 @@
         </div>
       </div>
       <footer data-scroll-section>
-        <nuxt-link to="/image-loads">
+        <nuxt-link to="/image-loads/">
           Go to Image Loads
         </nuxt-link>
       </footer>
