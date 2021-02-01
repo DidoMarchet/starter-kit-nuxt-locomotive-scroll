@@ -65,7 +65,7 @@ export default {
         case 'fadeText': {
           const child = obj.el.firstChild
           gsap.to(child, {
-            duration: 2.5,
+            duration: 2,
             ease: 'expo.out',
             opacity: 0
           })
