@@ -67,7 +67,7 @@ export default {
           gsap.to(child, {
             duration: 2,
             ease: 'expo.out',
-            opacity: 0
+            opacity: 0.25
           })
           break
         }
