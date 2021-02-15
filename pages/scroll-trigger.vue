@@ -4,11 +4,11 @@
     :getted-options="{
       direction: 'vertical',
       smartphone: {
-        direction: 'vertical'
+        direction: 'vertical',
       },
       tablet: {
-        direction: 'vertical'
-      }
+        direction: 'vertical',
+      },
     }"
   >
     <div class="example vertical">
@@ -29,9 +29,7 @@
         </div>
       </div>
       <footer data-scroll-section>
-        <nuxt-link to="/image-loads/">
-          Go to Image Loads
-        </nuxt-link>
+        <nuxt-link to="/image-loads/"> Go to Image Loads </nuxt-link>
       </footer>
     </div>
   </LocomotiveScroll>
@@ -44,44 +42,52 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default {
   components: {
-    BoxComponent: () => import(/* webpackPrefetch: true */ '@/components/box-component.vue')
+    BoxComponent: () =>
+      import(/* webpackPrefetch: true */ '@/components/box-component.vue'),
   },
-  mounted () {
+  mounted() {
     this.initScrolltrigger()
 
     const elements = document.querySelectorAll('[data-scroll-trigger]')
-    elements.forEach(element => this.elementAnimation(element))
+    elements.forEach((element) => this.elementAnimation(element))
   },
   methods: {
-    initScrolltrigger () {
+    initScrolltrigger() {
       const locomotive = this.$refs.scroller.locomotive
       locomotive.on('scroll', ScrollTrigger.update)
       ScrollTrigger.scrollerProxy(locomotive.el, {
-        scrollTop (value) {
-          return arguments.length ? locomotive.scrollTo(value, 0, 0) : locomotive.scroll.instance.scroll.y
+        scrollTop(value) {
+          return arguments.length
+            ? locomotive.scrollTo(value, 0, 0)
+            : locomotive.scroll.instance.scroll.y
         },
-        getBoundingClientRect () {
-          return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight }
-        }
+        getBoundingClientRect() {
+          return {
+            top: 0,
+            left: 0,
+            width: window.innerWidth,
+            height: window.innerHeight,
+          }
+        },
       })
     },
-    elementAnimation (element) {
+    elementAnimation(element) {
       gsap.from(element, {
         scrollTrigger: {
           trigger: element,
           scroller: this.$refs.scroller.locomotive.el,
           scrub: true,
           start: 'top bottom',
-          end: 'bottom center'
+          end: 'bottom center',
         },
         scaleY: 0,
-        ease: 'none'
+        ease: 'none',
       })
-    }
-  }
+    },
+  },
 }
 </script>
 
 <style lang="scss">
-  @import './demo.scss';
+@import './demo.scss';
 </style>

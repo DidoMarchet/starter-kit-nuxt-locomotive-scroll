@@ -133,8 +133,8 @@ methods: {
 ```
 
 # Implementation
-Before using our component in the page we declare it globally in [`/plugins/global.js`](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/plugins/client.js). 
-`/plugins/global.js` is called in the Nuxt [plugins configuration](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/configuration/plugins/index.js).
+Before using our component in the page we declare it globally in [`/plugins/both.js`](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/plugins/both.js). 
+`/plugins/both.js` is called in the Nuxt [plugins configuration](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/configuration/plugins/index.js).
 
 Once the plugin is global we can use it in our page or components in this way ([`/pages/index.vue`](https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll/blob/main/pages/index.vue)):
 

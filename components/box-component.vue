@@ -9,6 +9,6 @@
 
 <script>
 export default {
-  name: 'BoxComponent'
+  name: 'BoxComponent',
 }
 </script>

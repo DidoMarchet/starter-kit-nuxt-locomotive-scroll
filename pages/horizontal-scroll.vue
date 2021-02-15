@@ -6,40 +6,53 @@
       direction: 'horizontal',
       smartphone: {
         smooth: true,
-        direction: 'horizontal'
+        direction: 'horizontal',
       },
       tablet: {
         smooth: true,
-        direction: 'horizontal'
-      }
+        direction: 'horizontal',
+      },
     }"
   >
     <div class="example horizontal">
       <header data-scroll-section>
-        <h1>Horizontal<br> Scroll</h1>
+        <h1>
+          Horizontal<br />
+          Scroll
+        </h1>
       </header>
       <div class="example-section" data-scroll-section>
         <div class="example-content">
-          <div class="example-big-square" data-scroll data-scroll-speed="-0.5" />
+          <div
+            class="example-big-square"
+            data-scroll
+            data-scroll-speed="-0.5"
+          />
           <div class="example-small-square" data-scroll data-scroll-speed="2" />
         </div>
       </div>
       <div class="example-section" data-scroll-section>
         <div class="example-content">
-          <div class="example-big-square" data-scroll data-scroll-speed="-0.5" />
+          <div
+            class="example-big-square"
+            data-scroll
+            data-scroll-speed="-0.5"
+          />
           <div class="example-small-square" data-scroll data-scroll-speed="2" />
         </div>
       </div>
       <div class="example-section" data-scroll-section>
         <div class="example-content">
-          <div class="example-big-square" data-scroll data-scroll-speed="-0.5" />
+          <div
+            class="example-big-square"
+            data-scroll
+            data-scroll-speed="-0.5"
+          />
           <div class="example-small-square" data-scroll data-scroll-speed="2" />
         </div>
       </div>
       <footer data-scroll-section>
-        <nuxt-link to="/scroll-trigger/">
-          Go to Gsap Scroll Trigger
-        </nuxt-link>
+        <nuxt-link to="/scroll-trigger/"> Go to Gsap Scroll Trigger </nuxt-link>
       </footer>
     </div>
   </LocomotiveScroll>
@@ -47,10 +60,10 @@
 
 <script>
 export default {
-  mounted () {}
+  mounted() {},
 }
 </script>
 
 <style lang="scss">
-  @import './demo.scss';
+@import './demo.scss';
 </style>
