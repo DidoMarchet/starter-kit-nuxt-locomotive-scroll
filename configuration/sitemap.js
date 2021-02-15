@@ -1,2 +1,4 @@
 // https://sitemap.nuxtjs.org/
-export default {}
+export default {
+  sitemap: {},
+}

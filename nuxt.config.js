@@ -28,7 +28,7 @@ import rootDir from './configuration/rootDir.js'
 import router from './configuration/router.js'
 import runtimeConfig from './configuration/runtimeConfig.js'
 import server from './configuration/server.js'
-import sitemap from './configuration/sitemap.js'
+// import sitemap from './configuration/sitemap.js'
 import srcDir from './configuration/srcDir.js'
 import styleResources from './configuration/styleResources.js'
 import target from './configuration/target.js'
@@ -68,7 +68,7 @@ export default {
   ...router,
   ...runtimeConfig,
   ...server,
-  ...sitemap,
+  // ...sitemap,
   ...srcDir,
   ...styleResources,
   ...target,
