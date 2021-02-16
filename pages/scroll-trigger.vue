@@ -21,7 +21,9 @@
           <div class="example-small-square" data-scroll-trigger />
         </div>
       </div>
-      <BoxComponent />
+      <div class="example-section" data-scroll-section>
+        <BoxComponent @loaded="trigComponent" />
+      </div>
       <div class="example-section" data-scroll-section>
         <div class="example-content">
           <div class="example-big-square" />
@@ -47,7 +49,6 @@ export default {
   },
   mounted() {
     this.initScrolltrigger()
-
     const elements = document.querySelectorAll('[data-scroll-trigger]')
     elements.forEach((element) => this.elementAnimation(element))
   },
