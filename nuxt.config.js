@@ -2,6 +2,7 @@ import alias from './configuration/alias.js'
 import apollo from './configuration/apollo/'
 import axios from './configuration/axios.js'
 import build from './configuration/build.js'
+import buildModules from './configuration/buildModules.js'
 import buildDir from './configuration/buildDir.js'
 import cli from './configuration/cli.js'
 import components from './configuration/components.js'
@@ -42,6 +43,7 @@ export default {
   ...apollo,
   ...axios,
   ...build,
+  ...buildModules,
   ...buildDir,
   ...cli,
   ...components,
