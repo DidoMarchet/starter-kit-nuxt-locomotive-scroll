@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="example-section" data-scroll-section>
-        <BoxComponent @loaded="trigComponent" />
+        <BoxComponent />
       </div>
       <div class="example-section" data-scroll-section>
         <div class="example-content">
