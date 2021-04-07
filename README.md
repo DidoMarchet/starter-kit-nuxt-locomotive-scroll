@@ -64,7 +64,7 @@ Complete code can be found here [`/LocomotiveScroll/component/index.js`](https:/
 ### Markup
 ``` html
 <div
-  v-locomotive="{ options }}"
+  v-locomotive="{ options }"
   class="js-locomotive"
 >
   <slot />
