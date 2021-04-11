@@ -189,3 +189,8 @@ mounted () {
 
 ### On Call Function
 [https://starter-kit-nuxt-locomotive-scroll.netlify.app/on-call/](https://starter-kit-nuxt-locomotive-scroll.netlify.app/on-call/)
+
+# Thanks
+If you find this repo useful and you saved time, well... let's take a coffee together!
+
+:coffee: [https://www.buymeacoffee.com/davide_marchet](https://www.buymeacoffee.com/davide_marchet)
