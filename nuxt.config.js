@@ -17,6 +17,7 @@ import gtm from './configuration/google-tag-manager.js'
 import hooks from './configuration/hooks.js'
 import head from './configuration/head/'
 import i18n from './configuration/i18n.js'
+import image from './configuration/image.js'
 import loading from './configuration/loading.js'
 import loadingIndicator from './configuration/loadingIndicator.js'
 import modules from './configuration/modules.js'
@@ -29,14 +30,16 @@ import rootDir from './configuration/rootDir.js'
 import router from './configuration/router.js'
 import runtimeConfig from './configuration/runtimeConfig.js'
 import server from './configuration/server.js'
-// import sitemap from './configuration/sitemap.js'
+import sitemap from './configuration/sitemap.js'
 import srcDir from './configuration/srcDir.js'
+import ssr from './configuration/ssr.js'
 import styleResources from './configuration/styleResources.js'
 import target from './configuration/target.js'
 import telemetry from './configuration/telemetry.js'
 import vueConfig from './configuration/vueConfig.js'
 import watch from './configuration/watch.js'
 import watchers from './configuration/watchers.js'
+require('dotenv').config()
 
 export default {
   ...alias,
@@ -58,6 +61,7 @@ export default {
   ...head,
   ...hooks,
   ...i18n,
+  ...image,
   ...loading,
   ...loadingIndicator,
   ...modules,
@@ -70,8 +74,9 @@ export default {
   ...router,
   ...runtimeConfig,
   ...server,
-  // ...sitemap,
+  ...sitemap,
   ...srcDir,
+  ...ssr,
   ...styleResources,
   ...target,
   ...telemetry,

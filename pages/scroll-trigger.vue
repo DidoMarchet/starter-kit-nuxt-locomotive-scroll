@@ -49,8 +49,11 @@ export default {
   },
   mounted() {
     this.initScrolltrigger()
-    const elements = document.querySelectorAll('[data-scroll-trigger]')
-    elements.forEach((element) => this.elementAnimation(element))
+
+    this.$nextTick(() => {
+      const elements = document.querySelectorAll('[data-scroll-trigger]')
+      elements.forEach((element) => this.elementAnimation(element))
+    })
   },
   methods: {
     initScrolltrigger() {

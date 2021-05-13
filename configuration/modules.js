@@ -5,10 +5,10 @@ export default {
     '@nuxtjs/style-resources',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/apollo',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/gtm',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    '@nuxtjs/apollo',
-    // '@nuxtjs/sitemap',
-    '@nuxtjs/gtm',
   ],
 }
