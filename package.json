@@ -22,13 +22,11 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.12.1",
     "gsap": "^3.6.1",
-    "library": "file:../library",
     "locomotive-scroll": "^4.1.1",
     "nuxt": "^2.15.6",
     "nuxt-i18n": "^6.27.0",
     "qs": "^6.10.1",
-    "remove-focus-outline": "^1.2.1",
-    "utils": "file:../utils"
+    "remove-focus-outline": "^1.2.1"
   },
   "devDependencies": {
     "@nuxt/image": "^0.4.8",
