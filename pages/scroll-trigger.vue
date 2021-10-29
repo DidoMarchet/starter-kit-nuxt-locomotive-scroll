@@ -10,6 +10,7 @@
         direction: 'vertical',
       },
     }"
+    @init="locomotive = $refs.scroller.locomotive"
   >
     <div class="example vertical">
       <header data-scroll-section>
@@ -47,34 +48,39 @@ export default {
     BoxComponent: () =>
       import(/* webpackPrefetch: true */ '@/components/box-component.vue'),
   },
-  mounted() {
-    this.initScrolltrigger()
+  data: () => ({
+    locomotive: undefined,
+  }),
+  watch: {
+    locomotive: {
+      handler() {
+        this.locomotive.on('scroll', ScrollTrigger.update)
+        const locomotive = this.locomotive
+        ScrollTrigger.scrollerProxy(locomotive.el, {
+          scrollTop(value) {
+            return arguments.length
+              ? locomotive.scrollTo(value, 0, 0)
+              : locomotive.scroll.instance.scroll.y
+          },
+          getBoundingClientRect() {
+            return {
+              top: 0,
+              left: 0,
+              width: window.innerWidth,
+              height: window.innerHeight,
+            }
+          },
+          pinType: document.querySelector('.js-locomotive').style.transform
+            ? 'transform'
+            : 'fixed',
+        })
 
-    this.$nextTick(() => {
-      const elements = document.querySelectorAll('[data-scroll-trigger]')
-      elements.forEach((element) => this.elementAnimation(element))
-    })
+        const elements = document.querySelectorAll('[data-scroll-trigger]')
+        elements.forEach((element) => this.elementAnimation(element))
+      },
+    },
   },
   methods: {
-    initScrolltrigger() {
-      const locomotive = this.$refs.scroller.locomotive
-      locomotive.on('scroll', ScrollTrigger.update)
-      ScrollTrigger.scrollerProxy(locomotive.el, {
-        scrollTop(value) {
-          return arguments.length
-            ? locomotive.scrollTo(value, 0, 0)
-            : locomotive.scroll.instance.scroll.y
-        },
-        getBoundingClientRect() {
-          return {
-            top: 0,
-            left: 0,
-            width: window.innerWidth,
-            height: window.innerHeight,
-          }
-        },
-      })
-    },
     elementAnimation(element) {
       gsap.from(element, {
         scrollTrigger: {
