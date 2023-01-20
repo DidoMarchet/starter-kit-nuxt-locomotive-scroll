@@ -176,6 +176,8 @@ mounted () {
 }
 ```
 
+:pill: Alternatively, you may use this (smart) solution https://github.com/locomotivemtl/locomotive-scroll/issues/408 provided by [MikeHantha](https://github.com/MikeHantha) 
+
 # Examples
 ### Basic Scroll
 [https://starter-kit-nuxt-locomotive-scroll.netlify.app/](https://starter-kit-nuxt-locomotive-scroll.netlify.app/)
